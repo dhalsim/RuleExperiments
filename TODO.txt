@@ -1,0 +1,30 @@
+﻿conditional interceptor (factory method)
+================
+1. değer tutacak, mesela enum (ConditionalRule tutacak)
+	a. Amadeus
+	b. External
+	c. AmadeusAndExternal
+2. class type tutacak
+	a. IFlightSearch
+3. Proxy üzerinden çağrıldığında ilgili implemantasyonu çalıştıracak
+	a. AmadeusFlightSearch
+	b. ExternalFlightSearch
+	c. AmadeusAndExternalFlightSearch
+4. İlgili enum'u methodun üstündeki ConditionalValueRule üzerinden alsın
+	a. typeof enum
+	b. enum value
+
+logging
+=======
+1. Her şeyin loglanması
+	a. Validatorlerin çalışması
+	b. Rule'ların çalışması
+	c. DisabledWithlerin çalışması
+	d. Conditional Rule'ların çalışması
+	e. Validation Ruleların çalışması
+	f. Methodların loglanması
+2. Loglamanın açılıp kapanabilir olması
+3. Loglama levelının ayarlanabilir olması
+	a. Verbose logging: herşey
+	b. Warning logging: DisabledWith Ignore durumu gibi
+	c. Error logging: DisabledWith RaiseError durumu gibi
