@@ -1,6 +1,6 @@
-﻿using NUnit.Framework;
+﻿using Models.Exceptions;
+using NUnit.Framework;
 using RuleExperiments.Business;
-using RuleExperiments.Exceptions;
 
 namespace RuleExperiments.UnitTests
 {

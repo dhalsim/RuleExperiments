@@ -1,5 +1,6 @@
-﻿using NUnit.Framework;
-using RuleExperiments.Rules;
+﻿using Models.Models.Attributes.Rules;
+using NUnit.Framework;
+using RuleExperiments.Factories;
 
 namespace RuleExperiments.UnitTests
 {

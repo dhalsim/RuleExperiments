@@ -1,7 +1,8 @@
-﻿using NUnit.Framework;
+﻿using Models.Interfaces;
+using NUnit.Framework;
 using RuleExperiments.Business;
 using RuleExperiments.Business.SearchFlight;
-using RuleExperiments.Rules.Models;
+using RuleExperiments.Factories;
 
 namespace RuleExperiments.UnitTests
 {

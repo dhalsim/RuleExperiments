@@ -1,0 +1,7 @@
+﻿namespace RuleExperiments.Models
+{
+    public class SearchResponse
+    {
+        public ProviderType ProviderType { get; set; }
+    }
+}

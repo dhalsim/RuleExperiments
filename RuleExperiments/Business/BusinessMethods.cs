@@ -1,5 +1,6 @@
-﻿using RuleExperiments.Rules;
-using RuleExperiments.Rules.Models;
+﻿using Models.Interfaces;
+using Models.Models.Attributes.Rules;
+using RuleExperiments.Models;
 
 namespace RuleExperiments.Business
 {

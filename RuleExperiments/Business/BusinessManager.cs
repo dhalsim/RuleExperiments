@@ -1,5 +1,6 @@
 ﻿using Castle.DynamicProxy;
-using RuleExperiments.Interceptors;
+using Library.Interceptors;
+using Models.Interfaces;
 
 namespace RuleExperiments.Business
 {

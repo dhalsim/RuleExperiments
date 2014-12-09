@@ -1,0 +1,5 @@
+C:\Users\BAydek\Documents\Visual Studio 2013\Projects\RuleExperiments\Models\bin\Debug\Models.dll
+C:\Users\BAydek\Documents\Visual Studio 2013\Projects\RuleExperiments\Models\bin\Debug\Models.pdb
+C:\Users\BAydek\Documents\Visual Studio 2013\Projects\RuleExperiments\Models\obj\Debug\Models.dll
+C:\Users\BAydek\Documents\Visual Studio 2013\Projects\RuleExperiments\Models\obj\Debug\Models.pdb
+C:\Users\BAydek\Documents\Visual Studio 2013\Projects\RuleExperiments\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache

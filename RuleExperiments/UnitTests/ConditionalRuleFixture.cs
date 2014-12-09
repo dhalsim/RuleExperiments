@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
 using Castle.DynamicProxy;
+using Library.Interceptors;
+using Models.Interfaces;
+using Models.Models.Attributes.Rules;
+using Models.Models.Enums;
 using NUnit.Framework;
-using RuleExperiments.Business.SearchFlight;
-using RuleExperiments.Interceptors;
-using RuleExperiments.Rules;
-using RuleExperiments.Rules.Models;
+using RuleExperiments.Models;
 
 namespace RuleExperiments.UnitTests
 {

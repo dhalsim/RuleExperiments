@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{996D245B-CC2D-48AA-ADE5-E534820A8B76}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Models</RootNamespace>
+    <AssemblyName>Models</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bases\BaseRule.cs" />
+    <Compile Include="Exceptions\BaseAmadeusException.cs" />
+    <Compile Include="Exceptions\IAmadeusException.cs" />
+    <Compile Include="Exceptions\SystemLevelException.cs" />
+    <Compile Include="Exceptions\UserLevelException.cs" />
+    <Compile Include="Interfaces\Business\IBusinessContainer.cs" />
+    <Compile Include="Interfaces\Rules\IEnabledRule.cs" />
+    <Compile Include="Interfaces\Rules\IRuleProvider.cs" />
+    <Compile Include="Interfaces\Rules\IValidatableRule.cs" />
+    <Compile Include="Interfaces\Rules\IValidatableWithFunc.cs" />
+    <Compile Include="Models\Attributes\Rules\ConditionalRule.cs" />
+    <Compile Include="Models\Attributes\Rules\EnabledRule.cs" />
+    <Compile Include="Models\Attributes\Rules\SimpleRule.cs" />
+    <Compile Include="Models\Attributes\Rules\SimpleValidatorRule.cs" />
+    <Compile Include="Models\Attributes\Rules\ValidatorRuleWithFuncRule.cs" />
+    <Compile Include="Models\Enums\MethodName.cs" />
+    <Compile Include="Models\Enums\ProviderType.cs" />
+    <Compile Include="Models\Enums\RuleDisableBehavior.cs" />
+    <Compile Include="Models\Attributes\RuleName.cs" />
+    <Compile Include="Models\RuleModels\DisableRule.cs" />
+    <Compile Include="Models\RuleModels\RuleValue.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entities\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

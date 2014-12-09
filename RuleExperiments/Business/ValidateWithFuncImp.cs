@@ -1,4 +1,4 @@
-﻿using RuleExperiments.Rules.Interfaces;
+﻿using Models.Interfaces.Rules;
 
 namespace RuleExperiments.Business
 {

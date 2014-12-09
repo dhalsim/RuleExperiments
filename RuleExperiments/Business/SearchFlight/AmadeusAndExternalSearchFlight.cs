@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using RuleExperiments.Rules.Models;
+using RuleExperiments.Models;
 
 namespace RuleExperiments.Business.SearchFlight
 {
