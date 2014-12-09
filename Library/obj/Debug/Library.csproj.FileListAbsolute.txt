@@ -1,1 +1,10 @@
 C:\Users\BAydek\Documents\Visual Studio 2013\Projects\RuleExperiments\Library\obj\Debug\Library.csprojResolveAssemblyReference.cache
+C:\Users\BAydek\Documents\Visual Studio 2013\Projects\RuleExperiments\Library\bin\Debug\Library.dll
+C:\Users\BAydek\Documents\Visual Studio 2013\Projects\RuleExperiments\Library\bin\Debug\Library.pdb
+C:\Users\BAydek\Documents\Visual Studio 2013\Projects\RuleExperiments\Library\bin\Debug\Castle.Core.dll
+C:\Users\BAydek\Documents\Visual Studio 2013\Projects\RuleExperiments\Library\bin\Debug\HaveBox.dll
+C:\Users\BAydek\Documents\Visual Studio 2013\Projects\RuleExperiments\Library\bin\Debug\Models.dll
+C:\Users\BAydek\Documents\Visual Studio 2013\Projects\RuleExperiments\Library\bin\Debug\Models.pdb
+C:\Users\BAydek\Documents\Visual Studio 2013\Projects\RuleExperiments\Library\bin\Debug\Castle.Core.xml
+C:\Users\BAydek\Documents\Visual Studio 2013\Projects\RuleExperiments\Library\obj\Debug\Library.dll
+C:\Users\BAydek\Documents\Visual Studio 2013\Projects\RuleExperiments\Library\obj\Debug\Library.pdb

@@ -10,21 +10,25 @@ namespace Library.Helpers
 {
     public class IOCHelper
     {
-        private static Container _container;
+        private Container _container;
 
-        public static Container Scan()
+        public IOCHelper(bool scan = true)
+        {
+            if (scan)
+                Scan();
+
+
+        }
+
+        private void Scan()
         {
             var assembly = Assembly.GetAssembly(typeof(IEnabledRule));
             _container = new Container();
             _container.Configure(config => config.MergeConfig(new SimpleScanner(assembly)));
-            return _container;
         }
 
         public T GetInstance<T>(ProviderType e)
         {
-            if(_container == null)
-                _container = Scan();
-
             Type type = typeof(T);
             string interfaceName = type.Name;
             string interfaceNamespace = type.Namespace;
@@ -40,11 +44,8 @@ namespace Library.Helpers
             return _container.GetInstance<T>(implementationName);
         }
 
-        public object GetInstance(ProviderType e)
+        public object GetInstance(BusinessTypes b, ProviderType e)
         {
-            if (_container == null)
-                _container = Scan();
-
             Type type = typeof(IEnabledRule);
             string interfaceName = type.Name;
             string interfaceNamespace = type.Namespace;
@@ -57,7 +58,7 @@ namespace Library.Helpers
                     interfaceName, e));
             }
 
-            return _container.GetInstance<T>(implementationName);
+            return _container.GetInstance(implementationType);
         }
     }
 }

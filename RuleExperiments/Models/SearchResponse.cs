@@ -1,4 +1,6 @@
-﻿namespace RuleExperiments.Models
+﻿using Models.Models.Enums;
+
+namespace RuleExperiments.Models
 {
     public class SearchResponse
     {

@@ -1,18 +1,20 @@
-﻿using Models.Interfaces;
+﻿using Library.Helpers;
+using Models.Interfaces;
+using Models.Models.Enums;
 using NUnit.Framework;
-using RuleExperiments.Business;
 using RuleExperiments.Business.SearchFlight;
-using RuleExperiments.Factories;
 
 namespace RuleExperiments.UnitTests
 {
     [TestFixture]
-    public class BusinessFactoryFixture
+    public class IOCFixture
     {
         [Test]
         public void Should_create_amadeus_flight_search_object()
         {
-            var flightObject = new BusinessFactory<ISearchFlight>().Get(ProviderType.Amadeus);
+            var container = new IOCHelper();
+
+            var flightObject = container.GetInstance<ISearchFlight>(ProviderType.Amadeus);
             Assert.IsInstanceOf<AmadeusSearchFlight>(flightObject);
         }
     }

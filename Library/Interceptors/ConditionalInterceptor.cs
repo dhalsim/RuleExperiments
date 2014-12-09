@@ -25,37 +25,37 @@ namespace Library.Interceptors
 
                 if (conditionalRule != null)
                 {
-                    Type factoryType = typeof (BusinessFactory<>);
-                    Type declaringType = methodInfo.DeclaringType;
+//                    Type factoryType = typeof (BusinessFactory<>);
+//                    Type declaringType = methodInfo.DeclaringType;
 
-                    if (declaringType == null)
-                    {
-                        string message = string.Format(@"ConditionalInterceptor error. DeclaringType is null. 
-                            Method Name: {0}", methodInfo.Name);
-                        throw new SystemException(message);
-                    }
+//                    if (declaringType == null)
+//                    {
+//                        string message = string.Format(@"ConditionalInterceptor error. DeclaringType is null. 
+//                            Method Name: {0}", methodInfo.Name);
+//                        throw new SystemException(message);
+//                    }
 
-                    Type firstInterface = declaringType.GetInterfaces().FirstOrDefault();
+//                    Type firstInterface = declaringType.GetInterfaces().FirstOrDefault();
 
-                    if (firstInterface == null)
-                    {
-                        string message = string.Format(@"ConditionalInterceptor error. Interface cannot be found. 
-                            Method Name: {0}, Declaring Type: {1}", methodInfo.Name, declaringType.Name);
-                        throw new SystemLevelException(message);
-                    }
+//                    if (firstInterface == null)
+//                    {
+//                        string message = string.Format(@"ConditionalInterceptor error. Interface cannot be found. 
+//                            Method Name: {0}, Declaring Type: {1}", methodInfo.Name, declaringType.Name);
+//                        throw new SystemLevelException(message);
+//                    }
 
-                    Type[] invocatioTypes = {firstInterface};
-                    var factoryObject = factoryType.MakeGenericType(invocatioTypes);
-                    var factoryInstance = Activator.CreateInstance(factoryObject);
+//                    Type[] invocatioTypes = {firstInterface};
+//                    var factoryObject = factoryType.MakeGenericType(invocatioTypes);
+//                    var factoryInstance = Activator.CreateInstance(factoryObject);
 
-                    var factoryMethod = factoryInstance.GetType().GetMethod("Get");
-                    var objectInstance = factoryMethod.Invoke(factoryInstance, new[] {conditionalRule.Value});
+//                    var factoryMethod = factoryInstance.GetType().GetMethod("Get");
+//                    var objectInstance = factoryMethod.Invoke(factoryInstance, new[] {conditionalRule.Value});
 
-                    var businessObject = BusinessContainer.Get<>()
+                    //var businessObject = BusinessContainer.Get<>()
 
 
-                    invocation.ReturnValue = firstInterface.GetMethod(conditionalRule.Method.ToString())
-                        .Invoke(objectInstance, invocation.Arguments.ToArray());
+                    //invocation.ReturnValue = firstInterface.GetMethod(conditionalRule.Method.ToString())
+                    //    .Invoke(objectInstance, invocation.Arguments.ToArray());
                 }
 
                 // method call bypassed, ReturnValue used instead of Proceed

@@ -54,6 +54,7 @@
     <Compile Include="Models\Attributes\Rules\SimpleRule.cs" />
     <Compile Include="Models\Attributes\Rules\SimpleValidatorRule.cs" />
     <Compile Include="Models\Attributes\Rules\ValidatorRuleWithFuncRule.cs" />
+    <Compile Include="Models\Enums\BusinessTypes.cs" />
     <Compile Include="Models\Enums\MethodName.cs" />
     <Compile Include="Models\Enums\ProviderType.cs" />
     <Compile Include="Models\Enums\RuleDisableBehavior.cs" />

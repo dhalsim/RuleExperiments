@@ -62,7 +62,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\PortalEnabledRules.cs" />
     <Compile Include="Factories\RulesFactory.cs" />
-    <Compile Include="UnitTests\BusinessFactoryFixture.cs" />
+    <Compile Include="UnitTests\IOCFixture.cs" />
     <Compile Include="UnitTests\ConditionalRuleFixture.cs" />
     <Compile Include="UnitTests\EnabledDisabledWithFixture.cs" />
     <Compile Include="UnitTests\EnabledFixture.cs" />
